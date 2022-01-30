@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&display=swap');
+
+body{
+    margin: 0 ;
+        .main-wrap{
+            max-width: 1440px;
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            margin: auto;
+
+               .header{
+                    position: fixed;
+                    z-index: 2;
+                    background:linear-gradient(rgba(51, 51, 51, 0.26) 11%,rgba(255, 255, 255, 0) 97%);
+                    width: 100%;
+                    max-width: 1440px;
+                    transition: 2s;
+                
+                        .header-top {
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: flex-end;
+                            font-family: 'Poppins Bold';
+                            width: 100%;
+                           
+                            .deliver{
+                                width: 48%;
+                                align-items: center;
+                                font-size: 12px;
+                            }
+                        
+                            .stores{
+                                display: flex;
+                                align-items: center;
+                                font-size: 10px;
+                                cursor: pointer;
+                                margin: 0 2% 0 0;
+ 
+                                img{
+                                    padding-right: 6px;
+                                }
+                            }
+
+                            p{
+                                margin: 0;
+                            }
+                        }
+                   
+                        .mainHeader{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;              
+                            padding: 17px 27px 10px;
+                            
+                            ::-webkit-input-placeholder { /* WebKit browsers */
+                                color:    #fff;
+                            }
+                            :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                                color:   #fff;
+                            }
+                            ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                                color:    #fff;;
+                            }
+                            :-ms-input-placeholder { /* Internet Explorer 10+ */
+                                color:    #fff;;
+                            }
+
+                            .logoName{                               
+                                p{
+                                    font-family: 'Poppins Bold';
+                                    font-size: 39px;
+                                    margin: 0;
+                                    color: #fff;                               
+                                    @media screen and (max-width: 960px) {                                        
+                                        font-size: 29px;
+                                    }
+                                }                                                                                           
+                            }
+                        
+                            .searchBlock{
+                                max-width: 580px;
+                                position: relative;
+                                width: 100%;
+                                display: flex;
+                                height: 43px;
+                                margin: 7px 0 0 8px;
+                                font-size: 15px;
+                                background-color: rgba($color: #ffffff, $alpha: 0.6);
+                                font-family: 'Poppins' sans-serif;
+                                border-radius: 2px;
+
+                                @media screen and (max-width: 960px) {                                        
+                                    max-width: 430px;
+                                }
+
+                                 @media screen and (max-width: 760px) {                                        
+                                    max-width: 325px;
+                                    height: 34px;
+                                }
+
+                                 @media screen and (max-width: 646px) {                                         
+                                    max-width: 231px;
+                                    height: 29px;
+                                }                               
+                            }    
+
+                            .searchString{
+                                flex: 1;
+                                padding-left: 17px;
+                                font-size: 12px;
+                                font-family: 'Poppins Bold';
+                                background: 0 0;
+                                border: none;
+                            }
+
+                            input{
+                                color: #fff;                
+                                border: none;
+                            }
+
+                            :focus {
+                                outline: 0;
+                                border: none;
+                            }
+
+                            .searchButton{
+                                width: 40px;
+                                
+                                cursor: pointer;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                transition: 1s;
+                                &:hover{
+                                    background-color: rgb(179, 179, 179);
+                                }
+                            }
+
+                            .loginMenu{
+
+                                display: flex;
+                                align-items: center;
+                                padding: 0 0 9px 6px;
+                                color: #fff;
+                                font-family: 'Poppins Bold';
+                                font-size: 13px;
+
+                                @media screen and (max-width: 895px) {                                        
+                                    font-size: 10px;
+                                }
+                                
+
+                                .singIn{
+                                    display: flex;
+                                    cursor: pointer;
+                                    &:hover{
+                                        color: blanchedalmond;
+                                    }
+                                }
+
+                                .singInForm{
+                                    margin: 0 5px;
+                                    
+                                }
+
+                                .register{
+                                    cursor: pointer;
+                                    &:hover{
+                                        color: blanchedalmond;
+                                    }
+                                }
+
+                                .bascket{
+                                    img{
+                                        margin-left: 20px;
+                                        cursor: pointer;
+                                        
+                                    }
+                                }
+                            }   
+                        }
+
+                        .mainHeaderContent{                            
+                            max-width: 635px;
+                            margin: auto;
+
+                            @media screen and (max-width: 895px) {                                         
+                                max-width: 510px;
+                            } 
+
+                             @media screen and (max-width: 895px) {                                       
+                                max-width: 395px;
+                            } 
+                       
+                            .content{
+                                ul{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    list-style: none;
+                                    padding: 0;
+
+                                    li{
+                                                                          
+                                        a{
+                                            font-size: 13px;
+                                            font-family: 'Poppins Bold';
+                                            color: #fff;
+                                            text-decoration: none;
+                                            transition: 0.5s;
+
+                                             &:hover{
+                                                color: blanchedalmond;                                            
+                                            }  
+
+                                            @media screen and (max-width: 895px) {                                       
+                                                font-size: 10px;     
+                                             } 
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                
+                         
+                    
+                    
+                }
+            .bodyContent{
+                .slider{
+                    margin-top: 18px;
+                    height: 655px;
+                    max-width: 1440px;
+                    overflow: hidden;
+                    position: relative;
+
+                    @media screen and (max-width: 800px){
+                        height: 515px;
+                    }
+
+                    @media screen and (max-width: 646px){
+                        height: 365px;
+                    }
+
+                    .sliderItem{
+                        img{
+                        
+                            @media screen and (max-width: 800px) { 
+                                max-width: 1000px;
+                                height: auto;
+                                object-fit: cover;
+                                overflow: hidden;       
+                            }
+
+                             @media screen and (max-width: 646px) { 
+                                max-width: 700px;
+                                height: auto;
+                                object-fit: cover;
+                                overflow: hidden;
+                            }
+                        }
+                        
+                    }
+                }
+                
+                .slick-arrow{
+                    position: absolute;
+                    top: 50%;
+                    }
+                .slick-track{
+                    display: flex;
+                    width: 1440px;
+                }
+                // .slick-list{
+                //     overflow: hidden;
+                // }
+                .headerText{
+                    position: absolute;
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    text-align: center;
+                    font-size: 60px;
+                    color: #fff;
+                    width: 100%;
+                    top: 39%;
+                    transform: translate(0,-50%);
+                    height: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media screen and (max-width: 960px) {                    
+                        font-size: 40px;
+                        top: 30%;
+                    }
+
+                     @media screen and (max-width: 760px) {                     
+                        font-size: 30px;    
+                    }
+                }
+            .searchBlock{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .searchBlockContein{
+                    width: 100%;
+                    max-width: 436px;
+                    margin: 20px 0;
+
+                    .emailRegist{
+                        display: flex;
+                        justify-content: space-between;
+                        
+
+                        input {
+                            width: 318px;
+                            height: 24px;
+                            display: block;
+                            padding-left: 8px;
+                        }
+
+                        button{
+                            background-color: #000;
+                            color: #fff;
+                            font-size: 10px;
+                            font-family: 'Poppins Medium';;
+                            border: none;
+                            width: 93px;
+                            border-radius: 3px;
+                            letter-spacing: 1px;
+                            cursor: pointer;
+                            transition: 1s;
+
+                            &:hover{
+                                background-color: rgb(211, 211, 211);
+                                color: #000;
+                               
+                            }
+
+                        }
+                    }
+                    .searchBlockConteinText{
+                        font-size: 13px;
+                        font-family: 'Poppins', sans-serif;
+                        letter-spacing: .3px;
+                    }
+                }
+
+            }    
+                
+        }
+            footer{
+                background-color: #F7F7F7;
+
+                .footerConteiner{
+                        max-width: 885px;  
+                        margin: 0 auto;     
+
+                        @media screen and (max-width: 960px) {                 
+                            max-width: 720px;  
+                        }
+                        
+                        .footerInfo{
+                            width: 100%;
+                            text-align: center;
+                            p{
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 10px;
+                            }
+                            
+                        }
+                    
+                        .prismicFooter{
+                            margin: 23px auto 35px;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            @media screen and (max-width: 760px) {            
+                                flex-direction: column;
+                                align-items: flex-start;
+                                
+                            }
+
+                            
+
+                            .footerNav{
+                                margin: 2px;
+
+                                @media screen and (max-width: 760px) { 
+                                        
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    margin: 0 auto;
+                                    
+                                }
+
+                                .footerAccordion{
+                                    display: flex;
+                                    flex-direction: column;
+
+
+
+                                    @media screen and (max-width: 760px) { 
+                                        
+                                        position: absolute;
+                                        left: 0;
+                                        display: none;
+                                        padding-left: 20%;
+                                    
+                                    }
+    
+                                    a{
+                                        margin: 2px;
+                                        text-decoration: none;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 13px;
+                                        color: #000;
+                                        
+                                    }
+
+                                
+                                }
+                                
+                                .footerSocialLinks{
+                                    margin: 0 4px;
+
+                                    
+                                }
+                                .footerTitle{
+
+                                    @media screen and (max-width: 760px) {    
+                                        display: flex;
+                                        align-items:center;
+                                        border-bottom: 1px solid;
+                                        width: 490px;
+                                        justify-content: space-between;
+                                    }
+
+                                    @media screen and (max-width: 645px){
+                                        width: 415px;
+                                    }
+                                }
+                            }
+
+                            .social{
+
+                                @media screen and (max-width: 760px) {   
+                                    margin: 27px auto 0;
+                                }
+
+                                p{
+                                    @media screen and (max-width: 760px) {      
+                                        display: none
+                                    }
+                                }
+                            }
+                            .socialIcons{
+                                display: flex;
+                                flex-direction: row;
+
+                            }
+                            .footerSocialLinks{
+                                margin: 0 7px;
+                               
+                                @media screen and (max-width: 760px) {                                         
+                                    margin: 0 16px;                               
+                                }
+                                
+                                img{
+                                    
+                                    &:hover{
+                                        transform: scale(1.15);
+                                    }
+                                }
+
+                               
+                            }
+
+                            .footerTitle{
+                                p{
+                                    font-family: 'Cormorant+Garamond';
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    letter-spacing: .5px;
+                                }
+                                img{
+                                    display: none;
+                                    @media screen and (max-width: 760px) {    
+                                        display: block;
+                                    }
+                                }
+                            }
+    
+                        }
+                       
+                }
+
+                
+            }  
+                    
+    }    
+}
